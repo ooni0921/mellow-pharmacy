@@ -74,6 +74,9 @@
     </div>
 
     <script>
+        marked.setOptions({
+            gfm: false
+        });
         const params = new URLSearchParams(window.location.search);
         const drugId = params.get('id');
 
